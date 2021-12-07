@@ -55,7 +55,7 @@ export const getServerSideProps = async (ctx) => {
     }
 
     const pokemon = {
-      count: count.count || 0,
+      allTime: count.count || 0,
       id: data.id || 0,
       name: capitalize(data.name) || "null",
       height: data.height || 0,
