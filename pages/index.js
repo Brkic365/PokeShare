@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 
-import Grid from "../Components/Grid";
 import AuthModal from "../Components/AuthModal";
 
 export default function Home() {
