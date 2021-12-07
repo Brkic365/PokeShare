@@ -29,7 +29,10 @@ export const getServerSideProps = async (ctx) => {
       data.abilities.map((abilityInfo) => abilityInfo.ability.name)
     );
 
-    const countRaw = await fetch("http://localhost:3000/api/pokemon/getlikes", {
+    const protocol = ctx.req.headers["x-forwarded-proto"] || "http";
+    const baseUrl = ctx.req ? `${protocol}://${ctx.req.headers.host}` : "";
+
+    const countRaw = await fetch(baseUrl + "/api/pokemon/getlikes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
