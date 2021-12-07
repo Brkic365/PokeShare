@@ -9,8 +9,7 @@ export default async function handler(req, res) {
   const db = client.db("database");
 
   if (req.method == "POST") {
-    if (!pokemonID)
-      return res.status(400).json({ msg: "Pokemon ID is required" });
+    if (!pokemonID) return res.status(400).json({ count: 0 });
 
     // Get pokemon counter
     const pokemonCount = await db
@@ -23,6 +22,6 @@ export default async function handler(req, res) {
       return res.json({ count: 0 });
     }
   } else {
-    return res.status(400).json({ msg: "Invalid request method " });
+    return res.status(400).json({ count: 0 });
   }
 }
