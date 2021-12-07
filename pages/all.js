@@ -82,10 +82,12 @@ export const getServerSideProps = async (ctx) => {
         body: JSON.stringify({ pokemonID: pokemon.id }),
       });
 
+      let count;
+
       try {
-        const count = await countRaw.json();
+        count = await countRaw.json();
       } catch {
-        const count = 0;
+        count = 0;
       }
 
       const newPokemon = {
