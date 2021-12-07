@@ -1,0 +1,58 @@
+.home {
+  .main {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 13.2rem auto;
+
+    .left {
+      h1 {
+        color: #3d7dca;
+        font-size: 5rem;
+
+        span {
+          color: #ffcb05;
+        }
+      }
+
+      p {
+        color: #3d7dca;
+        font-size: 1.3rem;
+        width: 25rem;
+        margin: 1rem 0;
+      }
+
+      button {
+        padding: 1.3rem 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #3d7dca;
+        color: white;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    img {
+      z-index: 2;
+    }
+
+    .cornerCircle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  h3 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: normal;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,90 @@
+.modal {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  .shadow {
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    svg {
+      position: absolute;
+      right: 2rem;
+      top: 1.4rem;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .top {
+      display: flex;
+      place-content: flex-start;
+
+      img {
+        width: 30%;
+      }
+
+      .right {
+        padding: 2rem;
+        display: flex;
+        place-content: flex-start;
+        flex-direction: column;
+
+        .basic {
+          p {
+            font-size: 1.3rem;
+            color: rgba(0, 0, 0, 0.6);
+
+            span {
+              color: black;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .extra {
+          margin-top: 2rem;
+          display: flex;
+          place-content: flex-start;
+
+          .abilities,
+          .moves {
+            p {
+              font-size: 1.3rem;
+            }
+
+            .title {
+              opacity: 0.6;
+            }
+          }
+
+          .moves {
+            margin-left: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

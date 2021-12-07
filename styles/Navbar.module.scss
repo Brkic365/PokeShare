@@ -1,0 +1,45 @@
+.nav {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  place-content: space-between;
+
+  h2 {
+    cursor: pointer;
+    color: #3d7dca;
+    font-size: 2rem;
+
+    span {
+      color: #ffcb05;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+    p {
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .search {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.1rem;
+        width: 18rem;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}

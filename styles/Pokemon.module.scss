@@ -1,0 +1,60 @@
+.pokemon {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .allTime,
+  .today {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    width: 80%;
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      color: #3d7dca;
+    }
+  }
+
+  .bottom {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    width: 80%;
+
+    button {
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #3d7dca;
+      color: white;
+      padding: 0.5rem 2rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}
