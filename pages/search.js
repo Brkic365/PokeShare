@@ -22,7 +22,9 @@ export default function Search({ pokemon }) {
 export const getServerSideProps = async (ctx) => {
   const term = ctx.query.term;
 
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${term}`);
+  const res = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${term.toLowerCase()}`
+  );
 
   const capitalize = (s) => (s && s[0].toUpperCase() + s.slice(1)) || "";
 
